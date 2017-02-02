@@ -17,7 +17,6 @@
 \textwidth=6.5in
 \textheight=9.0in
 \headsep=0.25in
-
 \linespread{1.1} % Line spacing
 \pagestyle{fancy}
 \lhead{\hmwkAuthorName}
@@ -32,33 +31,10 @@
 %-------------------------------------------------------------------------------
 %	CODE INCLUSION CONFIGURATION
 %-------------------------------------------------------------------------------
-
-\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} 
-\lstloadlanguages{Python}
-\lstset{language=Python, % Use Python in this example
-        frame=single, % Single frame around code
-        basicstyle=\small\ttfamily, % Use small true type font
-        keywordstyle=[1]\color{Blue}\bf, % Python functions bold and blue
-        keywordstyle=[2]\color{Purple}, % Python function arguments purple
-        keywordstyle=[3]\color{Blue}\underbar, 
-        identifierstyle=, % Nothing special about identifiers
-        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, 
-        stringstyle=\color{Purple}, % Strings are purple
-        showstringspaces=false, % Don't put marks in string spaces
-        tabsize=5, % 5 spaces per tab
-        morekeywords={rand},
-        morekeywords=[2]{on, off, interp},
-        morekeywords=[3]{test},
-        morecomment=[l][\color{Blue}]{...}, 
-        numbers=left, % Line numbers on left
-        firstnumber=1, % Line numbers start with line 1
-        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
-        stepnumber=5 % Line numbers go in steps of 5
-}
 \newcommand{\pythonscript}[2]{
-\begin{itemize}
-	\item[]\lstinputlisting[caption=#2,label=#1]{#1.py}
-\end{itemize}
+	\begin{itemize}
+		\item[]\lstinputlisting[caption=#2,label=#1]{#1.py}
+	\end{itemize}
 }
 %------------------------------------------------------------------
 %	DOCUMENT STRUCTURE COMMANDS
@@ -112,7 +88,7 @@
 %	NAME AND CLASS SECTION
 %-------------------------------------------------------------------------------
 \newcommand{\hmwkTitle}{Tarea\ \#01}
-\newcommand{\hmwkDueDate}{Martes,\ Enero\ 27,\ 2017}
+\newcommand{\hmwkDueDate}{Jueves,\ Febrero\ 09,\ 2017}
 \newcommand{\hmwkClass}{An\'alisis Numerico de ODEs}
 \newcommand{\hmwkClassTime}{9:00am}
 \newcommand{\hmwkClassInstructor}{Sa\'ul D\'iaz Infante V.}
@@ -140,11 +116,8 @@
 	%\tableofcontents
 	%\newpage
 %-------------------------------------------------------------------------------
-
 %PROBLEM 1
 %-------------------------------------------------------------------------------
-
-
 	\begin{enumerate}
 		\item
 			Bajar alguna distribuci\'on de Linux.
@@ -164,9 +137,21 @@
 		\item
 			Crear un repositorio Git para tareas.
 		\item
-		      En el repositorio, subir script \verb|hola_mundo.py|
+			En el repositorio, subir script \verb|hola_mundo.py|
 		\item
-		      Incluir el archivo README donde se explique los pasos para
-		      crear, conectar y actualizar un repositorio.
-	\end{enumerate}
+			Incluir el archivo README donde se explique los pasos para
+			crear, conectar y actualizar un repositorio.
+		\item
+			Incluir el ejercicio de la clase del martes 24/Ene /2017 (Algor\'itmo de Heron).
+		\begin{itemize}
+			\item Hacer un proyecto en Pycharm.
+			\item Programar el Script de python que aproxime la $\sqrt{5}$ con
+			el algoritmo de Heron.
+			\item
+			subir el proyecto al GitHub.
+		\end{itemize}
+		\item
+			Hacer el ejercicio de la última clase (Lecture02.pdf). 
+			Entregar diagrama de flujo (imagen), código ejecutable, vía GitHub.
+\end{enumerate}
 \end{document} 
